@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Gradient-->
+    <div class="bg-container">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+    </div>
+
+    <!-- Main Container To Enclose The Calculator-->
+    <div class="calculator-wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Simple Calculator</span>
+            </div>
+            <div class="controls">
+                <button class="control-btn" id="theme-toggle" title="Toggle Theme">
+                    <span class="theme-icon">☀️</span>
+                </button>
+                <button class="control-btn" id="sound-toggle" title="Toggle Sound">
+                    <span class="sound-icon">🔊</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Calculator Body -->
+        <div class="calculator">
+            <!-- Display Section -->
+            <div class="display-section">
+                <div class="expression-display" id="expression"></div>
+                <div class="main-display">
+                    <input type="text" id="display" readonly value="0" autocomplete="off">
+                </div>
+                <div class="history-display" id="history">
+                    <div class="history-item">Ready</div>
+                </div>
+            </div>
+
+            <!-- Button Grid -->
+            <div class="button-grid">
+                <!-- Row 1 -->
+                <button class="btn btn-function" data-action="clear">AC</button>
+                <button class="btn btn-function" data-action="sign">±</button>
+                <button class="btn btn-function" data-action="percent">%</button>
+                <button class="btn btn-operator" data-action="divide">÷</button>
+
+                <!-- Row 2 -->
+                <button class="btn btn-number" data-number="7">7</button>
+                <button class="btn btn-number" data-number="8">8</button>
+                <button class="btn btn-number" data-number="9">9</button>
+                <button class="btn btn-operator" data-action="multiply">×</button>
+
+                <!-- Row 3 -->
+                <button class="btn btn-number" data-number="4">4</button>
+                <button class="btn btn-number" data-number="5">5</button>
+                <button class="btn btn-number" data-number="6">6</button>
+                <button class="btn btn-operator" data-action="subtract">−</button>
+
+                <!-- Row 4 -->
+                <button class="btn btn-number" data-number="1">1</button>
+                <button class="btn btn-number" data-number="2">2</button>
+                <button class="btn btn-number" data-number="3">3</button>
+                <button class="btn btn-operator" data-action="add">+</button>
+
+                <!-- Row 5 -->
+                <button class="btn btn-number btn-zero" data-number="0">0</button>
+                <button class="btn btn-number" data-action="decimal">.</button>
+                <button class="btn btn-equals" data-action="equals">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
