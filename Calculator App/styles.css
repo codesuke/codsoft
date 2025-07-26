@@ -1,7 +1,7 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap");
 
-/* CSS Variables - Moody Dark Theme */
+/* CSS Variables - Dark Theme */
 :root {
   /* Dark Moody Colors */
   --bg-primary: #0d0d0d;
@@ -122,10 +122,12 @@ body {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(-20px) rotate(180deg);
   }
@@ -397,6 +399,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

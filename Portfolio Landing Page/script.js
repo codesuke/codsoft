@@ -1,4 +1,4 @@
-//Typewriter Effect
+// Typewriter Effect
 const nameTypewriter = document.getElementById('nameTypewriter');
 const fullName = 'Chirayush Verma';
 const nickname = 'Codesuke';
@@ -57,6 +57,9 @@ const musicToggle = document.getElementById('musicToggle');
 const bgMusic = document.getElementById('bgMusic');
 const musicIcon = musicToggle.querySelector('i');
 let isPlaying = false;
+
+// Enable looping for background music
+bgMusic.loop = true;
 
 musicToggle.addEventListener('click', () => {
     if (isPlaying) {
