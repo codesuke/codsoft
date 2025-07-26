@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirayush Verma - Codesuke | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Fira+Code:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-item" id="musicToggle">
+            <i class="fas fa-play"></i>
+            <audio id="bgMusic" loop>
+                <source src="/asserts/backgroundmusic.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="nav-item" onclick="scrollToSection('about')">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="nav-item" onclick="scrollToSection('skills')">
+            <i class="fas fa-code"></i>
+        </div>
+        <div class="nav-item" onclick="scrollToSection('projects')">
+            <i class="fas fa-rocket"></i>
+        </div>
+        <div class="nav-item" onclick="scrollToSection('contact')">
+            <i class="fas fa-envelope"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="asserts/pfp.jpg" alt="" srcset="" width="200px" height="200px">
+            </div>
+            <h1 class="hero-title">
+                <span class="name-typewriter" id="nameTypewriter"></span>
+                <span class="typewriter-cursor">&nbsp;</span>
+            </h1>
+            <p class="hero-subtitle">Full Stack Developer</p>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-header fade-in">
+            <h2 class="section-title">
+                <span id="aboutTitle"></span>
+                <span class="bash-cursor">|</span>
+            </h2>
+            <p class="section-subtitle">The story behind the code</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text fade-in">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                        <span
+                            style="margin-left: 1rem; color: var(--text-secondary); font-size: 0.8rem;">about_codesuke.md</span>
+                    </div>
+                    <div class="terminal-content">
+                        <div><span class="terminal-prompt">$</span> whoami</div>
+                        <div>codesuke@dev:~$ Chirayush Verma</div>
+                        <br>
+                        <div><span class="terminal-prompt">$</span> cat bio.txt</div>
+                    </div>
+                </div>
+
+                <p>Hey there! I'm <span class="about-highlight">Chirayush Verma</span>, better known in the dev world as
+                    <span class="about-highlight">"Codesuke"</span>. It's a name that reflects my passion for both
+                    coding and gaming.
+                </p>
+
+                <p>I'm a <span class="about-highlight">Computer Science major</span> who loves diving into challenging
+                    projects and
+                    constantly learning new things. Whether I'm building out a new feature or debugging late into the
+                    night, I approach
+                    every task with a focus on <span class="about-highlight">strategy and continuous improvement</span>.
+                </p>
+
+                <p>When I'm not immersed in development work, you'll often find me engaged in <span
+                        class="about-highlight">esports</span>, exploring new music, or staying active with sports.
+                    These interests fuel
+                    my creativity and bring a unique perspective to my projects.</p>
+            </div>
+
+            <div class="about-stats fade-in">
+                <div class="card stat-card">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Coding</span>
+                </div>
+                <div class="card stat-card">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Skills</span>
+                </div>
+                <div class="card stat-card">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Commits This Month</span>
+                </div>
+                <div class="card stat-card">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Coffee Consumed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section-header fade-in">
+            <h2 class="section-title">
+                <span id="skillsTitle"></span>
+                <span class="bash-cursor">|</span>
+            </h2>
+            <p class="section-subtitle">The Technologies I Love To Work With</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="card skill-category fade-in">
+                <div class="skill-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3 class="skill-title">Frontend Technologies</h3>
+                <ul class="skill-list">
+                    <li>React.js & Next.js</li>
+                    <li>TypeScript & JavaScript</li>
+                    <li>Tailwind CSS</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+
+            <div class="card skill-category fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3 class="skill-title">Backend Technologies</h3>
+                <ul class="skill-list">
+                    <li>Node.js & Express</li>
+                    <li>RESTful APIs</li>
+                    <li>Authentication & JWT</li>
+                    <li>Microservices</li>
+                    <li>Server Architecture</li>
+                </ul>
+            </div>
+
+            <div class="card skill-category fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 class="skill-title">Database & Cloud</h3>
+                <ul class="skill-list">
+                    <li>MongoDB & Prisma</li>
+                    <li>PostgreSQL & MySQL</li>
+                    <li>Redis Caching</li>
+                    <li>AWS Services</li>
+                    <li>Docker & DevOps</li>
+                </ul>
+            </div>
+
+            <div class="card skill-category fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="skill-title">Core Programming</h3>
+                <ul class="skill-list">
+                    <li>C++ & Java</li>
+                    <li>Data Structures</li>
+                    <li>Algorithms & DSA</li>
+                    <li>System Design</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-header fade-in">
+            <h2 class="section-title">
+                <span id="projectsTitle"></span>
+                <span class="bash-cursor">|</span>
+            </h2>
+            <p class="section-subtitle">Some cool stuff I've built recently</p>
+        </div>
+
+        <div class="card project-card fade-in">
+            <div class="project-header">
+                <div class="project-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="project-title">Interactive Quiz Platform</h3>
+            </div>
+
+            <p class="project-description">
+                Built a sleek quiz app that's actually fun to use! Features dynamic questions, real-time scoring, and a
+                clean interface that adapts to different difficulty levels. Perfect for testing knowledge while keeping
+                users engaged with smooth animations and instant feedback.
+            </p>
+
+            <div class="project-tech">
+                <span class="tech-tag">NextJS</span>
+                <span class="tech-tag">ReactJS</span>
+                <span class="tech-tag">TailwindCSS</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Responsive</span>
+            </div>
+
+            <a href="https://github.com/codesuke/quiz-app" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://quiz-app-pearl-delta.vercel.app/" target="_blank" class="project-link">
+                <i class="fa-solid fa-code"></i>
+            </a>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-header fade-in">
+            <h2 class="section-title">
+                <span id="contactTitle"></span>
+                <span class="bash-cursor">|</span>
+            </h2>
+            <p class="section-subtitle">Ready to build something awesome together?</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="card contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="contact-title">Email</h3>
+                <a href="mailto:codesuke@gmail.com" class="contact-link">codesuke@gmail.com</a>
+            </div>
+
+            <div class="card contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3 class="contact-title">LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/codesuke/" target="_blank" class="contact-link">Let's network</a>
+            </div>
+
+            <div class="card contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3 class="contact-title">GitHub</h3>
+                <a href="https://github.com/codesuke" target="_blank" class="contact-link">Check my repos</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
